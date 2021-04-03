@@ -5,3 +5,7 @@
 laurentiu_tibea:
   path: "/laurentiu_tibea"
   controller: App\Controller\laurentiuTibeaController::index
+  
+balau_razvan:
+  path: "/balau_razvan"
+  controller: App\Controller\balauRazvanController::index
