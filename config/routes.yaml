@@ -9,3 +9,8 @@ laurentiu_tibea:
 vicky_rusu:
   path: /vicky_rusu
   controller: App\Controller\VickyRusuController::index
+
+balau_razvan:
+  path: "/balau_razvan"
+  controller: App\Controller\balauRazvanController::index
+  
