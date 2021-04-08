@@ -5,7 +5,7 @@
 laurentiu_tibea:
   path: "/laurentiu_tibea"
   controller: App\Controller\laurentiuTibeaController::index
-
-  jude_bogdan:
-  path: "/jude_bogdan"
-  controller: App\Controller\judeBogdanController::index
+  
+balau_razvan:
+  path: "/balau_razvan"
+  controller: App\Controller\balauRazvanController::index
