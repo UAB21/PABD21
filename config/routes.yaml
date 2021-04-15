@@ -1,3 +1,19 @@
 #index:
 #    path: /
-#    controller: App\Controller\DefaultController::index
+ #   controller: App\Controller\DefaultController::index
+
+laurentiu_tibea:
+  path: "/laurentiu_tibea"
+  controller: App\Controller\laurentiuTibeaController::index
+
+vicky_rusu:
+  path: /vicky_rusu
+  controller: App\Controller\VickyRusuController::index
+
+balau_razvan:
+  path: "/balau_razvan"
+  controller: App\Controller\balauRazvanController::index
+  
+BorsiaCalin:
+    path: "/BorsiaCalin"
+    controller: App\Controller\BorsiaCalinController::index 
