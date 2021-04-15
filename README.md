@@ -6,4 +6,4 @@ BREAZ MIHAI
 TIBEA LAURENTIU
 Balau Victor-Razvan
 Bancila Mihai
-Jude Bogdan Laurentiu
+Borsia Calin 
