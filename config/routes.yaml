@@ -18,6 +18,6 @@ BorsiaCalin:
     path: "/BorsiaCalin"
     controller: App\Controller\BorsiaCalinController::index 
 
-JudeBogan:
+JudeBogdan:
     path: "/JudeBogdan"
     controller: App\Controller\JudeBogdanController::index 
