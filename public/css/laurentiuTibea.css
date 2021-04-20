@@ -1,0 +1,34 @@
+body{
+    background: rgb(15,48,99);
+    background: linear-gradient(90deg, rgba(15,48,99,1) 0%, rgba(22,182,187,0.7063200280112045) 50%, rgba(15,48,99,1) 100%);
+    color: rgb(30,30,30);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.top-image{
+    width: 35%;
+}
+
+.text-image{
+    width: 25%;
+    float: left;
+}
+
+.text-small{
+    font-size: 14px;
+}
+
+.container-list{
+    width: 10%;
+    margin: auto;
+    text-align: left;
+}
+
+footer{
+    margin-top: 3%;
+    border: 1px solid rgba(0,0,0,0.3);
+}
