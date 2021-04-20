@@ -1,0 +1,68 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GolgotMihai{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/GolgotMihai.css') }}"/>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+
+    <header class="pt-5">
+        <div class="text-center">
+            <h2 class="font-weight-bold font-bold">Roșia Montană</h2>
+        </div>
+    </header>
+
+    <main class="pt-5">
+        <div class="container text-center text-small">
+            <p>Roșia Montană (în germană Goldbach, în maghiară Verespatak, în latină Alburnus Maior) este satul de reședință al comunei cu același nume din județul Alba, Transilvania, România.
+Pe Harta Iosefină a Transilvaniei din 1769-1773 (Sectio 137), localitatea apare sub numele de „Veres Patak” (traducere în limba română „Pârâul Sângeriu [Roșu]”).
+Este situată în Valea Roșiei, străbătută de râul Roșia. Râul Roșia este bogat în minerale, în special fier care îi dă o culoare roșiatică, de unde și denumirea comunei în română și maghiară. Culoarea roșiatică a apei se datorează mineritului excesiv ce durează de peste 2000 de ani.
+Patrimoniul din Roșia Montană se bucură începând din 5 februarie 2016 de recunoașterea oficială din partea statului român a valorii sale excepționale localitatea fiind inclusă pe Lista Indicativă a României pentru Patrimoniul Mondial UNESCO.
+                </p>
+		<br>
+		<img src="{{ asset('img/GolgotMihai/rosia montana.jpg') }}"
+		</div>
+            <p>Sate care formează comuna Roșia Montană:</p>
+            <div class="container-list">
+                <ul>
+                    	<li>Bălmoșești</li>
+                    	<li>Blidești</li>
+                    	<li>Bunta</li>
+                <li>Cărpiniș</li>
+                <li>Coasta Henții</li>
+                <li>Corna</li>
+                <li>Curături</li>
+                <li>Dăroaia</li>
+		<li>Gârda Bărbulești</li>
+		<li>Gura Roșiei</li>
+		<li>Iacobești</li>
+		<li>Ignățești</li>
+		<li>Roșia Montană</li>
+		<li>Șoal</li>
+		<li>Țarină</li>
+		<li>Vârtop</li>
+                </ul>
+            </div>
+            <div class="container text-center text-small">
+		<p>Localitatea are o existență milenară, fiind cunoscută încă dinaintea cuceririi Daciei, amintită de Herodot, Pliniu, Titus Liviu și este una din cele mai vechi localități cu tradiție în exploatarea metalelor prețioase din Europa.
+A fost înființată de către romani în timpul domniei lui Traian ca oraș minier cu coloniști din Iliria.
+Era cunoscută sub numele de Alburnus Maior. Primul document în care s-a specificat acest nume este o tablă din ceară ce datează din 6 februarie 131.
+În ruinele fostei cetăți, arheologii au descoperit locuințe, morminte, galerii miniere, unelte pentru minerit, multe inscripții în limba latină și greacă și 50 de tăblițe cerate. Multe din descoperirile arheologice pot fi văzute în Muzeul Mineritului din Roșia Montană. Din istoria mineritului se mai poate aminti că pe valea Roșiei erau șteampuri care funcționau asemănător morilor de apă, fiind folosite pentru măcinarea minereului, în perioada anului când pe valea Roșiei debitul apei era insuficient pentru șteampuri, se deschidea stăvilarul unui lac (tău) artificial.
+Roșia Montană a cunoscut și trăit toate evenimentele istoriei românilor: În anul 1784 casele exploratorilor au fost distruse de către revoluționarii lui Cloșca, născut în satul Cărpiniș, iar în timpul revoluției din 1848 Avram Iancu a avut aici pe Simion Balint, unul din cei mai devotați revoluționari.
+Aici s-a născut și a copilărit Iulia Faliciu, soția lui B.P. Hasdeu și mama poetei Iulia Hașdeu. B.P. Hasdeu a cunoscut-o în anul 1865, în casa protopopului Simion Balint.</p>
+	</div>
+        </div>
+    </main>
+
+    
+
+{% endblock %}

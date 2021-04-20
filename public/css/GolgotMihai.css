@@ -1,0 +1,22 @@
+body{
+    background-color: lightblue;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.top-image{
+    width: 35%;
+}
+
+.text-small{
+    font-size: 25px;
+}
+
+.container-list{
+width:20%;
+    margin: auto;
+    text-align: left;
+}
