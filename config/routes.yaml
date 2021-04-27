@@ -21,3 +21,7 @@ BorsiaCalin:
 JudeBogdan:
     path: "/JudeBogdan"
     controller: App\Controller\JudeBogdanController::index 
+
+bancilaMihai:
+  path: /bancilaMihai
+  controller: App\Controller\BancilaMihaiController::index
