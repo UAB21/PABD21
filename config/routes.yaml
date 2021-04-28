@@ -21,3 +21,20 @@ BorsiaCalin:
 JudeBogdan:
     path: "/JudeBogdan"
     controller: App\Controller\JudeBogdanController::index 
+
+bancilaMihai:
+  path: /Pages-BMihai/bancilaMihai
+  controller: App\Controller\BancilaMihaiController::index
+
+feed-bancilaMihai:
+  path: /Pages-BMihai/feed-bancilaMihai
+  controller: App\Controller\BancilaMihaiController::feed
+  
+about-bancilaMihai:
+  path: /Pages-BMihai/about-bancilaMihai
+  controller: App\Controller\BancilaMihaiController::about
+
+contact-bancilaMihai:
+  path: /Pages-BMihai/contact-bancilaMihai
+  controller: App\Controller\BancilaMihaiController::contact
+
