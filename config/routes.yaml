@@ -37,4 +37,3 @@ about-bancilaMihai:
 contact-bancilaMihai:
   path: /Pages-BMihai/contact-bancilaMihai
   controller: App\Controller\BancilaMihaiController::contact
-
