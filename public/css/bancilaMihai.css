@@ -51,8 +51,8 @@ ul.navi li.right {
 }
 
 @media screen and (max-width: 600px) {
-ul.navi li.right,
-ul.navi li {float: none;}
+  ul.navi li.right, 
+  ul.navi li {float: none;}
 }
 
 div.box{
