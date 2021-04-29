@@ -25,3 +25,7 @@ JudeBogdan:
 bancilaMihai:
   path: /bancilaMihai
   controller: App\Controller\BancilaMihaiController::index
+
+TandauGabrielClaudiu:
+  path: /TandauGabrielClaudiu
+  controller: App\Controller\TandauGabrielClaudiuController::index
