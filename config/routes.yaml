@@ -2,6 +2,6 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
-laurentiu_tibea:
-  path: "/laurentiu_tibea"
-  controller: App\Controller\laurentiuTibeaController::index
+steau(bedelean)_roxana_ioana:
+  path: "/steau(bedelean)_roxana_ioana"
+  controller: App\Controller\steauRoxanaIoanaController::index
