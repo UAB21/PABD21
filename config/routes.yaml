@@ -1,12 +1,11 @@
-#index:
-#    path: /
- #   controller: App\Controller\DefaultController::index
+index:
+  path: /
+  controller: App\Controller\DefaultController::index
 
-<<<<<<< HEAD
 steau(bedelean)_roxana_ioana:
   path: "/steau(bedelean)_roxana_ioana"
   controller: App\Controller\steauRoxanaIoanaController::index
-=======
+
 laurentiu_tibea:
   path: "/laurentiu_tibea"
   controller: App\Controller\laurentiuTibeaController::index
@@ -34,4 +33,3 @@ bancilaMihai:
 TandauGabrielClaudiu:
   path: /TandauGabrielClaudiu
   controller: App\Controller\TandauGabrielClaudiuController::index
->>>>>>> 6b2f79122a3834d8c39ea41f81db5419dbf69e3a
