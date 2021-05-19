@@ -33,3 +33,7 @@ bancilaMihai:
 TandauGabrielClaudiu:
   path: /TandauGabrielClaudiu
   controller: App\Controller\TandauGabrielClaudiuController::index
+
+BreazMihaiAlexandru:
+  path: "/BreazMihaiAlexandru"
+  controller: App\Controller\BreazMihaiAlexandruController::index
