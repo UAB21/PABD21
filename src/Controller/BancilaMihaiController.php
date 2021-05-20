@@ -7,10 +7,19 @@
 
     class BancilaMihaiController extends AbstractController
     {
-    /**
-         * @Route("/bancilaMihai", name="BancilaMihai")
-         */
         public function index(){
-            return $this->render('bancilaMihai.html.twig');
+            return $this->render('Pages-BMihai/bancilaMihai.html.twig');
+        }
+
+        public function feed(){
+            return $this->render('Pages-BMihai/feed-bancilaMihai.html.twig');
+        }
+
+        public function about(){
+            return $this->render('Pages-BMihai/about-bancilaMihai.html.twig');
+        }
+
+        public function contact(){
+            return $this->render('Pages-BMihai/contact-bancilaMihai.html.twig');
         }
     }
