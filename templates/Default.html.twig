@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{# BancilaMihai 
+
+    For a new link just add a new <li>...</li>
+
+    ATENTION!
+    The link must be the same as in route.yaml
+#}
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="../img/faviconDefault.png" sizes="16x16" type="image/png">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link href="{{ asset('css/Default.css')}}" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            {% block body %}{% endblock %}
+            <h1> Welcome </h1>
+            <h3> Click the button below to view a page: </h3>
+
+            <ul class="navi">
+                <li><a href="/balau_razvan">Balau Razvan</a></li>
+                <li><a href="/Pages-BMihai/bancilaMihai">Bancila Mihai</a></li>
+                <li><a href="/BorsiaCalin">Borsia Calin</a></li>
+                <li><a href="/BreazMihaiAlexandru">Breaz Mihai Alexandru</a></li>
+                <li><a href="/JudeBogdan">Jude Bogdan</a></li>
+                <li><a href="/vicky_rusu">Rusu Vicky</a></li>
+                <li><a href="/steau(bedelean)_roxana_ioana">Steau (Bedelean) Roxana Ioana</a></li>
+                <li><a href="/TandauGabrielClaudiu">Tandau Gabriel Claudiu</a></li>
+                <li><a href="/laurentiu_tibea">Tibea Laurentiu</a></li>
+                <li><a href="/galerie_foto">Tibea Laurentiu (galerie foto)</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
