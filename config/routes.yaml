@@ -10,6 +10,10 @@ laurentiu_tibea:
   path: "/laurentiu_tibea"
   controller: App\Controller\laurentiuTibeaController::index
 
+galerie_foto:
+  path: "/galerie_foto"
+  controller: App\Controller\GalerieFotoController::index
+
 vicky_rusu:
   path: /vicky_rusu
   controller: App\Controller\VickyRusuController::index
