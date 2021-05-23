@@ -1,0 +1,74 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Cotei Ovidiu Alin{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/coteiovidiualin.css') }}"/>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+
+    <header class="pt-5">
+        <div class="text-center">
+            <h2 class="font-weight-bold font-italic title">Unity (Game Engine)</h2>
+        </div>
+    </header>
+
+    <main class="pt-5">
+        <div class="container text-center text-small">
+            <img src="{{ asset('img/cotei_ovidiu/cotei_ovidiu.jpg') }}" class="text-image img">
+            <p class="t-left">
+              Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 
+              at Apple Inc.'s Worldwide Developers Conference as a Mac OS X-exclusive game engine. The engine has since been 
+              gradually extended to support a variety of desktop, mobile, console and virtual reality platforms. It is particularly 
+              popular for iOS and Android mobile game development and used for games such as Pokémon Go, Monument Valley, 
+              Call of Duty: Mobile, Beat Saber and Cuphead.[4] It is cited to be easy to use for beginner developers and is 
+              popular for Indie game development.
+            </p>
+            <p class="t-left">
+              The engine can be used to create three-dimensional (3D) and two-dimensional (2D) games, as well as interactive 
+              simulations and other experiences.[6][7] The engine has been adopted by industries outside video gaming, such 
+              as film, automotive, architecture, engineering and construction.
+            </p>
+            <p class="t-left">
+              Several major versions of Unity have been released since its launch. The latest stable version, 2021.1.0[1] Edit this on Wikidata,
+               was released on 23 March 2021; 60 days ago.
+            </p>
+            <br>
+
+            <p>Supported platforms</p>
+            <div class="container-list">
+                <ul>
+                    <li>Windows</li>
+                    <li>Android</li>
+                    <li>IOS</li>
+                    <li>Linux</li>
+                    <li>Open GL</li>
+                    <li>And More</li>
+                </ul>
+            </div>      
+            <br>
+            <em class="text-small">Source: <a href="https://en.wikipedia.org/wiki/Unity_(game_engine)" target="_blank">Unity (Game Engine) - Wikipedia</a></em>
+        </div>
+    </main>
+
+    <div class="container-info">
+      <p>Visit my website for more information</p>
+      <a href="https://ovykode.weebly.com/" target="_blank">Ovy Kode (Cotei Ovidiu)</a>
+      <img src="{{ asset('img/cotei_ovidiu/cotei_ovidiu.jpg') }}" class="text-image img">
+    </div>
+
+    <footer class="p-3 footer">
+        <div class="text-center text-small">
+            <p class="font-italic">&copy; Cotei Ovidiu Alin - PABD21</p> 
+        </div>
+    </footer>
+
+{% endblock %}
