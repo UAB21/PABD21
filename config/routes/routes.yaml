@@ -1,0 +1,5 @@
+# config/routes.yaml
+
+neaggabriel:
+    path: "/neaggabriel"
+    controller: App\Controller\NeagGabrielController::index
