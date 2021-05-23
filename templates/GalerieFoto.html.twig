@@ -1,0 +1,129 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Laurentiu Tibea{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="{{ asset('css/GalerieFoto.css') }}"/>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        function newImage(){
+            const url = "{{ url('galerie_foto_new') }}";
+            
+            window.location.href = url;
+        }
+        function editImage(id = 0){
+            const url = "{{ url('galerie_foto_edit', {'id' : 'image'}) }}".replace("image", id);
+            
+            window.location.href = url;
+        }
+        function deleteImage(id = 0){
+            const url = "{{ url('galerie_foto_delete', {'id' : 'image'}) }}".replace("image", id);
+            
+            window.location.href = url;
+        }
+        function back(){
+            const url = "{{ url('galerie_foto') }}";
+            
+            window.location.href = url;
+        }
+        function preview(params){
+            const transformed_params = params.split(",");
+            const imageSrc = "{{ asset('p1' ~ 'p2') }}"
+                .replace("p1", transformed_params[0])
+                .replace("p2", transformed_params[1]);
+            $("#imageSrc").attr("src", imageSrc)
+            $("#imageName").text(transformed_params[2]);
+            $("#previewModal").modal("show");
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+    <header class="pt-5">
+        <div class="text-center">
+            <h2 class="font-weight-bold font-italic">Galerie Foto</h2>
+        </div>
+    </header>
+
+    <main class="mt-3">
+        <div class="container text-center text-small">
+            {% if new|default(null) %}
+                <div>
+                    <div class="mt-3 mb-3 w-50 mx-auto">
+                        <button class="btn btn-danger" onClick="back()"><i class="fas fa-chevron-left"></i> Inapoi</button>
+                    </div>
+                    <h2 class="font-weight-bold font-italic mt-3 mb-3">Imagine noua</h2>
+
+                    {{ form_start(form) }}
+                        
+                    {{ form_end(form) }}
+                </div>
+            {% elseif edit|default(null) %}
+                <div>
+                    <div class="mt-3 mb-3 w-50 mx-auto">
+                        <button class="btn btn-danger" onClick="back()"><i class="fas fa-chevron-left"></i> Inapoi</button>
+                    </div>
+                    <h2 class="font-weight-bold font-italic mt-3">Editare imagine</h2>
+                    <img class="w-75 mt-3 mb-3" src="{{ asset(uploads_directory ~ image.originalName) }}"/>
+
+                    {{ form_start(form) }}
+                        
+                    {{ form_end(form) }}
+                </div>
+            {% else %}
+                <div class="row">
+                    <div class="mt-3 mb-3 w-50 mx-auto">
+                        <button class="btn btn-success" onClick="newImage()">Imagine noua <i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="row ml-5">
+                        {% for image in images %}
+                            <div class="col-md-3 mt-3 image-container">
+                                <p class="mt-2"><b>{{image.name}}</b></p>
+                                <img class="w-100" src="{{ asset(uploads_directory ~ image.originalName) }}" onClick="preview({{uploads_directory|json_encode}} + ',' + {{image.originalName|json_encode}} + ',' + {{image.name|json_encode}})"/>
+                                
+                                <div class="btn-list w-75 text-center">
+                                    <button class="btn btn-sm btn-warning ml-4" onClick="editImage({{image.id}})"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-sm btn-danger ml-5" onClick="deleteImage({{image.id}})"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    
+                </div>
+            {% endif %}
+            
+        </div>
+    </main>
+
+    <footer class="pt-3 mt-5">
+        <div class="text-center text-small">
+            <a class="font-italic text-decoration-none" style="color: black" href="{{asset('laurentiu_tibea')}}">&copy; Țibea Andrei Laurențiu - PABD21</a> 
+        </div>
+    </footer>
+
+    <div id="previewModal" class="modal w-100" tabindex="-1" role="dialog">
+        <div class="modal-dialog w-100" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="imageName" class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onClick="close()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body w-100">
+                    <img id="imageSrc" class="w-100" src=""/>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+{% endblock %}
