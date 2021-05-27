@@ -54,11 +54,6 @@ BreazMihaiAlexandru:
   path: "/BreazMihaiAlexandru"
   controller: App\Controller\BreazMihaiAlexandruController::index
 
-
-
-
-
-
 CoteiOvidiuAlin:
   path: "/coteiovidiualin"
   controller: App\Controller\CoteiOvidiuAlinController:index
