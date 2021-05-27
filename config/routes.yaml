@@ -28,7 +28,7 @@ BorsiaCalin:
 
 JudeBogdan:
     path: "/JudeBogdan"
-    controller: App\Controller\JudeBogdanController::index 
+    controller: App\Controller\judeBogdanController::index 
 
 bancilaMihai:
   path: /Pages-BMihai/bancilaMihai
@@ -54,6 +54,10 @@ BreazMihaiAlexandru:
   path: "/BreazMihaiAlexandru"
   controller: App\Controller\BreazMihaiAlexandruController::index
 
+CoteiOvidiuAlin:
+  path: "/coteiovidiualin"
+  controller: App\Controller\CoteiOvidiuAlinController:index
+
 SteauMihaiLucian:
   path: "/Pagini-SteauM/steaumihailucian"
   controller: App\Controller\SteauMihaiLucianController::index
@@ -73,4 +77,3 @@ despremine-SteauMihaiLucian:
 arhiva-SteauMihaiLucian:
   path: "/Pagini-SteauM/arhiva-steaumihailucian"
   controller: App\Controller\SteauMihaiLucianController::arhiva
-
