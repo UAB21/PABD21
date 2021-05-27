@@ -1,0 +1,62 @@
+{%extends 'base.html.twig' %}
+{% block title %} Steau Mihai  {% endblock %}
+{% block stylesheets %}
+
+<link rel="icon" href="../img/steau-mihai/img2.jpg" sizes="16x16" type="image/jpg">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/steaumihailucian.css') }}"/>
+
+{% endblock %}
+
+
+{% block body %}
+ <br><br>
+    <div class="container">
+        <ul class="navi">
+            <li><a class="active" href="/Pagini-SteauM/steaumihailucian">Acasa</a></li>
+            <li><a href="/Pagini-SteauM/lista-steaumihailucian">Exemple de liste</a></li>
+            <li><a href="/Pagini-SteauM/despremine-steaumihailucian">Despre Mine</a></li>
+            <li><a href="http://127.0.0.1:8000">Meniu vechi</a></li>
+            <li><a href="/Pagini-SteauM/arhiva-steaumihailucian">Arhiva 2020</a></li>
+            
+            <li class="right"><a href="/Pagini-SteauM/contact-steaumihailucian">Contact ok</a></li>
+        </ul>
+        <div class="info">
+            <br></br>
+            <h3 style="text-align: center;">
+              Bine ai venit la pagina mea care nu este completa, inca :((
+            </h3>
+            <br></br>
+        </div>
+
+        <h3 style="text-align: center;">  Aici ai sa gasesti multe informatii utile si amuzante </h3>
+
+        <img src="{{ asset('../img/steau-mihai/img1.jpg')}}" alt="img not found. deci posibil eroare">
+        <br></br>
+
+        <p>&nbsp&nbsp   Sa incep cu inceputul. <br>
+            Acest proiect este creat pentru a sustine un examen la Universitatea
+        " 1 Decembrie 1918" Alba Iulia,
+        <br> Facultatea de Stiinte Exacte si Ingineresti.</p>
+
+       <br>
+       &nbsp<img src="{{ asset('../img/steau-mihai/img3.jpg') }}" class="imagedreapta">
+        
+
+         <br>
+        <h4 style="text-align: center; ">
+        &nbsp&nbsp  Acest text este format cu dimensiunea de h4 si aliniat la centru, in Visual Studio Code.
+        <br><br>
+        <br><br>
+         Totodata crearea de paragrafe mai lungi ne ajuta sa intelegem mai bine functionalitea de blocuri ADICA
+         { } urmand ca in paranteze sa punem % cevaa   %, iar inauntru <i>endblock< /i>
+        <br> <b> Totodata nu conteaza daca acest text exte boldat sau nu, ci mai mult partea de estetic</b> </h4>
+     </div>
+
+     <footer class="p-3">
+        <div class="text-center text-small">
+            <p class="font-italic">&copy; Steau Mihai Lucian -UAB21/ PABD21</p> 
+        </div>
+    </footer>
+{% endblock %} 
