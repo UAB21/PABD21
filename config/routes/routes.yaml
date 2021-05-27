@@ -1,5 +1,5 @@
 # config/routes.yaml
 
 stefalin:
-    path: "/stefalin"
-    controller: App\Controller\stefalinController::index
+    path: "/risteiuileana1975"
+    controller: App\Controller\risteiuileana1975Controller::index
