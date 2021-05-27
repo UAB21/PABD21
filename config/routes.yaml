@@ -28,7 +28,7 @@ BorsiaCalin:
 
 JudeBogdan:
     path: "/JudeBogdan"
-    controller: App\Controller\JudeBogdanController::index 
+    controller: App\Controller\judeBogdanController::index 
 
 bancilaMihai:
   path: /Pages-BMihai/bancilaMihai
