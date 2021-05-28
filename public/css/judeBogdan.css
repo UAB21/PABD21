@@ -1,21 +1,63 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 80%;
+  color: #777;
+  line-height: 1.8;
+  background-color: rgb(48, 48, 59);
 
-body{
-	background-color:#4c679e;
-	display: table-cell;
-	vertical-align: middle;
+  width: center;
+
+}
+*{
+box-sizing: inherit
+
+}
+.w3-opacity-min {
+    opacity: 0.75;
 }
 
-img {
-	float: right;
-	width:170px;
-	height:170px;
-	margin-right:15px;
-  }
-html{
-	display: table;
-	margin: auto;
+.w3-padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
 }
-html, body {
-	height: 80%;
-	width: 50%;
+
+.w3-container, .w3-panel {
+    padding: 0.01em 16px;
 }
+.w3-content {
+    max-width: 980px;
+}
+
+.w3-content, .w3-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+
+
+/* Titlu cu  background  */
+.bgimg-1 {
+  background-image: url('#');
+  min-height: 40%;
+}
+
+
+
+
+
+/* A doua image daca vrei */
+.bgimg-3 {
+  background-image: url("#");
+  min-height: 200px;
+}
+
+.a2 {letter-spacing: 10px;}
+.a3 {cursor: pointer;}
+

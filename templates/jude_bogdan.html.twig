@@ -2,40 +2,86 @@
 
 {% block title %} Pagina personala - Jude Bogdan Laurentiu{% endblock %}
 {% block stylesheets %}
-	<link rel="stylesheet" href="{{ asset('css/JudeBogdan.css') }}"/>
+	<link rel="stylesheet" href="{{ asset('css/judeBogdan.css') }}"/>
+     <link rel="stylesheet" href="{{"https://www.w3schools.com/w3css/4/w3.css"}}"/>
+     <link rel="stylesheet" href="{{"https://fonts.googleapis.com/css?family=Lato"}}"/>
+     <link rel="stylesheet" href="{{"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"}}"/>
 {% endblock %}
 
 {% block body %}
 
- <div class="container">
-        <div class="card">
-            <div class="info">
-                <br></br>
-                 <h1> Pagina personala -- Jude Bogdan Laurentiu </h1>
-                 <h3> </h3>
-            </div>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo libero, faucibus sollicitudin rutrum a, scelerisque lacinia tortor. Nam dictum nisi non neque luctus maximus. Proin mauris velit, malesuada in magna eget, accumsan ultricies ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris maximus mi ac enim mattis sollicitudin. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam blandit dui sed tellus efficitur consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vel libero nibh. Suspendisse et dolor gravida, pretium eros quis, imperdiet ipsum. Vivamus tincidunt congue finibus. Sed iaculis iaculis odio, fringilla rhoncus mauris porta at.
+ <!-- Titlul pagini -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge a2 w3-animate-opacity">Pagina <span class="w3-hide-small">Personala</span></span>
+  </div>
+</div>
 
-Proin leo felis, venenatis eget commodo in, placerat quis quam. Integer cursus et massa vel molestie. Morbi malesuada, massa quis pulvinar rutrum, sem diam porta nunc, a rhoncus ipsum velit sit amet nisi. Fusce quis nisl purus. Donec venenatis mi a eros tincidunt, in suscipit diam malesuada. In erat enim, pellentesque et consectetur ac, ornare ut leo. Ut interdum tellus vitae massa vehicula, venenatis fringilla elit gravida. Etiam viverra mauris vel quam egestas, a venenatis lectus hendrerit. Pellentesque nisi erat, consectetur nec interdum ut, tristique id ex. Duis ornare a sem a faucibus. Donec commodo elit eu est dictum, eu bibendum purus consequat. Suspendisse porttitor, felis vel sollicitudin lobortis, odio nisi tempor dui, nec ultrices arcu orci vitae orci. Maecenas nunc tellus, blandit id ex sit amet, ullamcorper cursus felis. In placerat tristique augue ut fermentum.
+<!-- Container (Despre mine) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Despre mine </h3>
+  <p class="w3-center"><em>Imi place tehnologia</em></p>
+  <p>Numele meu este Jude Bogdan Laurentiu si sunt student la Universitatea „1 Decembrie 1918” din Alba Iulia,Facultatea de Ştiinţe Exacte şi Inginereşti
+  la programul de master Programare avansata si baze de date.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.   </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      
+      <img src="img\jude_bogdan\img1.jpg" class="w3-round w3-image w3-opacity a3-off"  width="300" height="333">
+    </div>
 
-Curabitur varius, sapien in hendrerit aliquet, arcu ex volutpat purus, ut porttitor sem odio quis ex. Proin luctus, ante at ornare faucibus, augue tellus facilisis arcu, ut sollicitudin metus turpis vel lorem. Nulla fringilla lectus congue lorem blandit, vitae eleifend urna venenatis. Donec massa risus, pretium eget dui in, tempus euismod elit. Mauris ac risus iaculis, maximus sem in, mollis lacus. Suspendisse vel ex quis elit consequat varius in nec felis. Aenean metus ex, efficitur quis ex a, tincidunt fermentum libero. Duis nec ex felis. Vestibulum et felis nulla. Duis sagittis dignissim molestie. Proin congue mollis augue et pharetra. Phasellus maximus pellentesque enim quis ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec at tortor scelerisque sem dapibus blandit sit amet a quam. Nulla erat justo, malesuada eget bibendum a, consequat nec quam. Phasellus maximus risus ac nibh pulvinar, vitae fermentum ex tristique. </p>
+    <!-- paragraf 2 -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+  
+  <p class="w3-large w3-center w3-padding-16">Sunt pasionat de :</p>
+  <li>Programare web</li>
+  <li>Securitate cibernetica</li>
+  <li>Retelistica</li>
 
-            
-            <ul>
-                 <li> Tastatura  </li>
-                 <li> Roter </li>
-                 <li> Swich </li>
-                 <li> Monitor </li>
 
-            </ul>
-<br></br>
-            <img src="{{ asset('img/jude_bogdan/img_a1.jpg')}}" alt="">
 
-           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo libero, faucibus sollicitudin rutrum a, scelerisque lacinia tortor. Nam dictum nisi non neque luctus maximus. Proin mauris velit, malesuada in magna eget, accumsan ultricies ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris maximus mi ac enim mattis sollicitudin. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam blandit dui sed tellus efficitur consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vel libero nibh. Suspendisse et dolor gravida, pretium eros quis, imperdiet ipsum. Vivamus tincidunt congue finibus. Sed iaculis iaculis odio, fringilla rhoncus mauris porta at.
 
-Proin leo felis, venenatis eget commodo in, placerat quis quam. Integer cursus et massa vel molestie. Morbi malesuada, massa quis pulvinar rutrum, sem diam porta nunc, a rhoncus ipsum velit sit amet nisi. Fusce quis nisl purus. Donec venenatis mi a eros tincidunt, in suscipit diam malesuada. In erat enim, pellentesque et consectetur ac, ornare ut leo. Ut interdum tellus vitae massa vehicula, venenatis fringilla elit gravida. Etiam viverra mauris vel quam egestas, a venenatis lectus hendrerit. Pellentesque nisi erat, consectetur nec interdum ut, tristique id ex. Duis ornare a sem a faucibus. Donec commodo elit eu est dictum, eu bibendum purus consequat. Suspendisse porttitor, felis vel sollicitudin lobortis, odio nisi tempor dui, nec ultrices arcu orci vitae orci. Maecenas nunc tellus, blandit id ex sit amet, ullamcorper cursus felis. In placerat tristique augue ut fermentum.
 
-Curabitur varius, sapien in hendrerit aliquet, arcu ex volutpat purus, ut porttitor sem odio quis ex. Proin luctus, ante at ornare faucibus, augue tellus facilisis arcu, ut sollicitudin metus turpis vel lorem. Nulla fringilla lectus congue lorem blandit, vitae eleifend urna venenatis. Donec massa risus, pretium eget dui in, tempus euismod elit. Mauris ac risus iaculis, maximus sem in, mollis lacus. Suspendisse vel ex quis elit consequat varius in nec felis. Aenean metus ex, efficitur quis ex a, tincidunt fermentum libero. Duis nec ex felis. Vestibulum et felis nulla. Duis sagittis dignissim molestie. Proin congue mollis augue et pharetra. Phasellus maximus pellentesque enim quis ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec at tortor scelerisque sem dapibus blandit sit amet a quam. Nulla erat justo, malesuada eget bibendum a, consequat nec quam. Phasellus maximus risus ac nibh pulvinar, vitae fermentum ex tristique.  </p>
-        </div>
-   
+<!-- Date contact -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white a2">Date de  Contact</span>
+  </div>
+</div>
+
+<!-- Container (Contact ) -->
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="img\jude_bogdan\img2.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Romania, Alba Iulia<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefon: 0726234764<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: jblbogdan@protonmail.com<br>
+      </div>
+      
+       
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer linkuri  -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity a3-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Inapoi </a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official a3"></i>
+    <i class="fa fa-instagram a3"></i>
+    <i class="fa fa-snapchat a3"></i>
+    <i class="fa fa-pinterest-p a3"></i>
+    <i class="fa fa-twitter a3"></i>
+    <i class="fa fa-linkedin a3"></i>
+  </div>
+  <p>Copyright &copy; <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">2021 Jude Bogdan Laurentiu</a></p>
+</footer>
+ 
+
 {% endblock body %} 
