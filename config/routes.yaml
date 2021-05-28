@@ -54,9 +54,14 @@ BreazMihaiAlexandru:
   path: "/BreazMihaiAlexandru"
   controller: App\Controller\BreazMihaiAlexandruController::index
 
+AndreeaOnofriesei:
+  path: '/AndreeaOnofriesei'
+  controller: App\Controller\AndreeaOnofrieseiController::index
+
 CoteiOvidiuAlin:
   path: "/coteiovidiualin"
   controller: App\Controller\CoteiOvidiuAlinController:index
+
 
 SteauMihaiLucian:
   path: "/Pagini-SteauM/steaumihailucian"
@@ -77,3 +82,8 @@ despremine-SteauMihaiLucian:
 arhiva-SteauMihaiLucian:
   path: "/Pagini-SteauM/arhiva-steaumihailucian"
   controller: App\Controller\SteauMihaiLucianController::arhiva
+
+DraganDorinAlexandru:
+  path: '/dragan-dorin-alexandru'
+  controller: App\Controller\DraganDorinAlexandruController::index
+
