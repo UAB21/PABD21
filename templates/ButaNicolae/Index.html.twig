@@ -1,0 +1,56 @@
+{%extends 'base.html.twig' %}
+{% block title %}
+	Buta Nicolae
+{% endblock %}
+{% block stylesheets %}
+	<link href="{{ asset('css/bootstrap/bootstrap.min.css')}}" rel="stylesheet"/>
+	<link href="{{ asset('css/buta_nicolae.css')}}" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+	{{ include('ButaNicolae/Navbar.html.twig') }}
+	<div class="container mt-4 backgroundColor h-100">
+		<div class="row justify-content-center">
+			<div class="col-12 text-center">
+				<h4 class="pageTitle">Personal Page</h4>
+			</div>
+			<div class="col-md-4">
+				<img src="{{asset('img/buta_nicolae/moto.jpg')}}" class="w-75 h-75">
+			</div>
+			<div class="col-md-4 paragraphText">
+				<p>
+					Orice nesabuit inteligent poate face lucrurile mai mari, mai complexe si mai violente. Trebuie sa ai o 
+																						sclipire de geniu, si mult curaj, ca sa muti lucrurile in directia opusa.
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+																industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+																and scrambled it to make a type specimen book. It has survived not only five centuries,
+																 but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+																 in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+																  with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+				</p>
+			</div>
+			<div class="col-md-4">
+				<img src="{{asset('img/buta_nicolae/moto2.jpg')}}" class="w-75 h-75">
+			</div>
+			<div class="col-md-12 paragraphText text-center">
+				<ul>
+					<li>
+						<img src="{{asset('img/buta_nicolae/moto.jpg')}}" class="imgInList">
+						<span>test</span>
+					</li>
+					<li>test</li>
+					<li>test</li>
+					<li>test</li>
+					<li>test</li>
+					<li>test</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+{% block javascript %}
+	<script src="{{ asset('css/bootstrap/bootstrap.min.js') }}"></script>
+{% endblock %}
