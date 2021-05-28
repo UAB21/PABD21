@@ -1,0 +1,48 @@
+
+
+{%extends 'base.html.twig' %}
+{% block title %} SteauMihaiLucian {% endblock %}
+
+{% block stylesheets %}
+<link href="{{ asset('css/steaumihailucian.css')}}" rel="stylesheet"/>
+<link rel="icon" href="../img/steau-mihai/img2.jpg" sizes="16x16" type="image/jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{% endblock %}
+
+{% block body %}
+    <br><br>
+    <div class="container">
+         <ul class="navi">
+            <li><a  href="#">Acasa</a></li>
+            <li><a href="/Pagini-SteauM/lista-steaumihailucian">Exemple de liste</a></li>
+            <li><a href="/Pagini-SteauM/despremine-steaumihailucian">Despre Mine</a></li>
+            <li><a href="http://127.0.0.1:8000">Meniu vechi</a></li>
+            <li><a class="active" href="/Pagini-SteauM/arhiva-steaumihailucian">Arhiva 2020</a></li>
+            
+            <li class="right"><a href="/Pagini-SteauM/contact-steaumihailucian">Contact ok</a></li>
+        </ul>
+        <div class="info">
+            <br></br>
+            <h1 style="text-align: center;"> Aici gasesti o lista cu proiecte vechi ale colegilor </h1>
+            <br></br>
+        </div>
+
+        <div class="cutie" style="text-align: center;">
+            <p>Nume: Steau</p>
+            <p>Prenume: Mihai Lucian</p>
+            <p>Telefon: 0786.577.674</p>
+            <p class="fa fa-facebook-official">&nbspFacebook: <a href="https://www.facebook.com/steaumihai23/" target="_blank"> link </a></p>
+            <br>
+            <p class="fa fa-github" aria-hidden">&nbspGithub: <a href="https://github.com/steaumihai" target="_blank"> link</a></p>
+            <br>
+            <p class="fa fa-address-square">&nbspStelute: <a href="https://www.google.com/" target="_blank"> link </a></p>
+             <br>
+            <p class="fa fa-youtube-square">&nbspInstagram: <a href="https://www.instagram.com/steaumihai23/" target="_blank"> link </a></p>
+             <br>
+            <p class="fa fa-linkedin-square">&nbspLinkdin: <a href="https://www.linkedin.com/in/steau-mihai-lucian-168731163/" target="_blank"> link </a></p>
+            <br>
+            
+        </div>
+     </div>
+{% endblock %} 

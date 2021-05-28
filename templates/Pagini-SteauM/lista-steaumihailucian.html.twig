@@ -1,0 +1,112 @@
+{%extends 'base.html.twig' %}
+{% block title %} SteauMihaiLucian {% endblock %}
+{% block stylesheets %}
+<link href="{{ asset('css/steaumihailucian.css')}}" rel="stylesheet"/>
+<link rel="icon" href="../img/Pagini-SteauM/img2.jpg" sizes="16x16" type="image/jpg">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+    <br><br>
+        <ul class="navi">
+            <li><a  href="/Pagini-SteauM/steaumihailucian">Acasa</a></li>
+            <li><a class="active" href="/Pagini-SteauM/lista-steaumihailucian">Exemple de liste</a></li>
+            <li><a href="/Pagini-SteauM/despremine-steaumihailucian">Despre Mine</a></li>
+            <li><a href="http://127.0.0.1:8000">Meniu vechi</a></li>
+            <li><a href="/Pagini-SteauM/arhiva-steaumihailucian">Arhiva 2020</a></li>
+            
+            <li class="right"><a href="/Pagini-SteauM/contact-steaumihailucian">Contact ok</a></li>
+        </ul>
+        <div class="info">
+            <br></br>
+            <h1> Exemple de liste si postari </h1>
+            <br></br>
+        </div>
+
+        <div class="cutie"  style="text-align: center;">
+
+            <h2>  Model lista neordonata</h2>
+
+        <ul >
+            <li>lapte</li>
+            <li>bere</li>
+            <li>suc</li>
+        </ul>  
+
+        <h2>Lista ordonata</h2>
+
+        <ol>
+            <li>lapte</li>
+            <li>bere</li>
+            <li>suc</li>
+        </ol> 
+
+        </div>
+
+         <div class="cutie">
+            <p>&nbsp&nbsp&nbsp&nbsp Acesta este un text simplu, fara aranjare si fără diacritice. 
+            Doar cu spatiere si atat, dar putem sa-l modificam dupa bunul nostru plac. </p><br>
+             <p>&nbsp&nbsp&nbsp Acesta este un text simplu, fara aranjare si fără diacritice. 
+            Doar cu spatiere si atat, dar putem sa-l modificam dupa bunul nostru plac. </p><br>
+             <p>&nbsp&nbsp Acesta este un text simplu, fara aranjare si fără diacritice. 
+            Doar cu spatiere si atat, dar putem sa-l modificam dupa bunul nostru plac. </p><br>
+        </div>
+
+        <br><br>
+        <h3 style="text-align: center;"> Ex. de imagini de tip galerie fara carusel sau slider </h3>
+
+        <div  class="box">
+        <div class="gallery">
+             <a target="_blank" href="https://www.facebook.com/steaumihai23/">
+             <img src="{{ asset('img/steau-mihai/apuseni3.jpg')}}"  width="100" height="100" >
+             </a>
+             <div class="desc">Img 1 </div>
+        </div> 
+        <br><Br>
+        <br><BR>
+
+        <div class="gallery">
+        <a target="_blank" href="https://www.facebook.com/steaumihai23/">
+        <img src="{{ asset('img/steau-mihai/apuseni5.jpg')}}""  width="100" height="100">
+        </a>
+        <div class="desc">Img 2</div>
+        </div>
+        
+
+        <div class="gallery">
+         <a target="_blank" href="https://www.facebook.com/steaumihai23/">
+          <img src="{{ asset('img/steau-mihai/apuseni4.jpg')}}"" width="100" height="100">
+         </a>
+         <div class="desc">Img 3</div>
+        </div>
+
+        <div class="gallery">
+        <a target="_blank" href="https://www.facebook.com/steaumihai23/">
+         <img src="{{ asset('img/steau-mihai/apuseni.jpg')}}""  width="100" height="100">
+         </a>
+          <div class="desc">Img 4</div>
+        </div>
+        
+        </div>
+
+
+        <br><br>
+        <h1  style="text-align: center;">  Exemplu de carusel   </h1>
+
+
+        
+
+
+          
+
+        <br><br>
+        <br><br>
+
+       
+
+
+
+       
+    </div>
+{% endblock %} 

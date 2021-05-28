@@ -62,6 +62,28 @@ CoteiOvidiuAlin:
   path: "/coteiovidiualin"
   controller: App\Controller\CoteiOvidiuAlinController:index
 
+
+SteauMihaiLucian:
+  path: "/Pagini-SteauM/steaumihailucian"
+  controller: App\Controller\SteauMihaiLucianController::index
+
+contact-SteauMihaiLucian:
+  path: "/Pagini-SteauM/contact-steaumihailucian"
+  controller: App\Controller\SteauMihaiLucianController::contact
+
+lista-SteauMihaiLucian:
+  path: "/Pagini-SteauM/lista-steaumihailucian"
+  controller: App\Controller\SteauMihaiLucianController::lista
+
+despremine-SteauMihaiLucian:
+  path: "/Pagini-SteauM/despremine-steaumihailucian"
+  controller: App\Controller\SteauMihaiLucianController::despremine
+
+arhiva-SteauMihaiLucian:
+  path: "/Pagini-SteauM/arhiva-steaumihailucian"
+  controller: App\Controller\SteauMihaiLucianController::arhiva
+
 DraganDorinAlexandru:
   path: '/dragan-dorin-alexandru'
   controller: App\Controller\DraganDorinAlexandruController::index
+
