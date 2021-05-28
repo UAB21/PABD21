@@ -53,3 +53,7 @@ TandauGabrielClaudiu:
 BreazMihaiAlexandru:
   path: "/BreazMihaiAlexandru"
   controller: App\Controller\BreazMihaiAlexandruController::index
+
+AndreeaOnofriesei:
+  path: '/AndreeaOnofriesei'
+  controller: App\Controller\AndreeaOnofrieseiController::index
