@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(161, 37, 152);
+}
+.continut{
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 12.5%;
+    height: 80%;
+    width: 80%;
+}
